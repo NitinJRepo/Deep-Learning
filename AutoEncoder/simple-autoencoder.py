@@ -38,6 +38,7 @@ autoencoder = Sequential()
 autoencoder.add(Dense(encoding_dim, input_shape=(input_dim,), activation='relu'))
 autoencoder.add(Dense(input_dim, activation='sigmoid'))
 
+print("AutoEncoder Summary: ")
 autoencoder.summary()
 
 # We can extract the encoder model from the first layer of the autoencoder model.
@@ -46,6 +47,7 @@ input_img = Input(shape=(input_dim,))
 encoder_layer = autoencoder.layers[0]
 encoder = Model(input_img, encoder_layer(input_img))
 
+print("Encoder Summary: ")
 encoder.summary()
 
 # Train the AutoEncoder
