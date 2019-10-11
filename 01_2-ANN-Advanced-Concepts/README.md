@@ -1,2 +1,4 @@
-References:
-https://machinelearningmastery.com/how-to-accelerate-learning-of-deep-neural-networks-with-batch-normalization/
+*References:*
+https://machinelearningmastery.com
+https://www.youtube.com/watch?v=nUUqwaxLnWs
+https://arxiv.org/abs/1502.03167
