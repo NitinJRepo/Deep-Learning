@@ -49,10 +49,10 @@ if __name__ == '__main__':
 		plot_no = 420 + (i+1)
 		pyplot.subplot(plot_no)
 		
-		# fit model and plot learning curves for a learning rate
+		# create and fit model
 		history = create_and_fit_model(trainX, trainy, testX, testy, learning_rates[i])
 		
-		# plot learning curves
+		# plot plot learning curve for a learning rate
 		plot_learning_rate(history, learning_rates[i])
 
 	# show learning curves
